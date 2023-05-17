@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>도구</title>
+</head>
+<body>
+    <h1> 쉽게 링크 만들기 ^^ </h1> <a href="/board/write">작성</a>
+    <table>
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td><a href="/board/{{ row[0] }}">{{ row[1] }}</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>

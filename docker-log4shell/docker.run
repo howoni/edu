@@ -1,0 +1,1 @@
+docker run -d --name vulnapp-log4shell --rm -p 9085:8080 log4shell:latest

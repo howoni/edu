@@ -1,0 +1,1 @@
+docker run --rm -d --name vulnapp-ghostcat -p  9081:8080 -p 3306:3306 -p 8009:8009 eea3d44707ca

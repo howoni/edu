@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ row[1] }}</title>
+    </head>
+    <body>
+        <h1>{{ row[1] }}</h1>
+        <div>
+            <a {{ row[2]|safe }} > Link </a>
+        </div>
+        <a href="/">게시판으로 돌아가기</a>
+        <script>
+            window.onload = function () {
+                if (window.debug) {
+                    location.href= window.debug.href ;
+                }
+            }
+        </script>
+    </body>
+</html>

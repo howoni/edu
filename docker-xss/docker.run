@@ -1,0 +1,1 @@
+docker run -d --rm --name vulapp-xss -p 5000:5001 vuln-xss:latest

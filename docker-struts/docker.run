@@ -1,1 +1,2 @@
-docker run --rm -d --name vulnapp-struts -p  8089:8080 -p 4406:3306 piesecurity/apache-struts2-cve-2017-5638
+#docker pull jrrdev/cve-2017-5638:latest
+docker run --rm -d --name vulnapp-struts -p 8089:8080 jrrdev/cve-2017-5638:latest
